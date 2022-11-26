@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Minesweeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body onload="onInitGame()">
+   <div>
+    <div class="game-container">
+      <div class="info-container">
+        <div class="info marked">MARKED : 0</div>
+        <div class="info moves">MOVES : 0</div>
+        <div class="info shown">SHOWN :</div>
+        <div class="info time">TIME : 00:00</div>
+
+        <div class="level-container">
+          <button class="level-btn" onclick="onLevel(this,4,2)">LEVEL 1</button>
+          <button class="level-btn" onclick="onLevel(this,8,14)">
+            LEVEL 2
+          </button>
+          <button class="level-btn" onclick="onLevel(this,12,32)">
+            LEVEL 3
+          </button>
+        </div>
+       
+        <div class= "lightMode" onclick="onLightMode(this)">LIGHT MODE</div>
+        <div class= "hint" onclick="onHint()">💡</div>
+      </div>
+      <div class="table-container">
+        <div class="table-space-top"></div>
+        <table border="1">
+          <tbody class="board"></tbody>
+        </table>
+      </div>
+      <div class="win-container">
+        <div class="lives"></div>
+        <div class="smiley"></div>
+        <div class = "msg">msg</h5>
+      </div>
+    </div>
+  </div>
+    <script src="js/main.js"></script>
+    <footer>Orit Leshem</footer>
+  </body>
+</html>
