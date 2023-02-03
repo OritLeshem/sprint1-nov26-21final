@@ -5,18 +5,7 @@ Minesweeper is a famous game in which the goal is to uncover all the squares tha
 
 
 Link:
-
-
-
-
-
-
-
-
-
-
-
-
+https://oritleshem.github.io/sprint1-nov26-21final/
 
 Built With:
 
